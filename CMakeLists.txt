@@ -72,7 +72,7 @@ find_path(glib_CONFIG_H NAMES glibconfig.h
           HINTS ${glib_LIBRARY_DIR}/${glib_LIBRARY_NAME}/include)
 
 get_filename_component(glibconfig_INCLUDE_DIR ${glib_CONFIG_H} DIRECTORY)
-include_directories(${glib_INCLUDE_DIR} ${glib_CONFIG_H})
+include_directories(${glib_INCLUDE_DIR} ${glib_CONFIG_H} ${glib_H})
 
 add_definitions(/DGTS_COMPILATION)
 
